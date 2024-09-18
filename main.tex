@@ -1,0 +1,51 @@
+% Created 2024-09-17 mar 14:38
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[spanish, american]{babel}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+\definecolor{customOrange}{HTML}{EC7600}
+\definecolor{customBlue}{HTML}{1B3247}
+\pagestyle{fancy}
+\usepackage{tikz}
+\setlength{\headheight}{38.22238pt}
+\setlength{\topmargin}{-26.22238pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\includegraphics[width=3cm]{./img/logo.png}}
+\setlength{\parindent}{0pt}
+\hypersetup{
+ pdfauthor={Hunter},
+ pdftitle={Título del Documento},
+ pdfkeywords={Palabras clave},
+ pdfsubject={Asunto del Documento},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.24)},
+ pdflang={spanish}
+}
+\author{Hunter}
+\date{\today}
+\title{}
+\begin{document}
+
+\input{tex/caratula} % Caratula del documento
+
+\newpage
+\tableofcontents % No pude quitarle la negrita :c
+
+\newpage
+\input{tex/contenido} % Contenido del documento
+
+\end{document}

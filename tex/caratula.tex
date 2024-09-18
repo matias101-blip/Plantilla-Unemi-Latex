@@ -1,0 +1,66 @@
+%Caratula del Documento
+
+\begin{titlepage}
+\newgeometry{top=0cm,bottom=0cm,left=2cm,right=2cm} % Configurar márgenes
+
+% Franja superior
+\noindent
+\makebox[\textwidth]{\colorbox{customOrange}{\parbox{\paperwidth}{\hspace{0pt}\vspace{0.3cm}}}}
+\vspace{1.5cm} % Ajusta este valor según sea necesario para posicionar la imagen sobre la barra
+
+\noindent
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north, yshift=0.1cm] at (current page.north) {\includegraphics[width=14cm]{./img/top.png}};
+\end{tikzpicture}
+
+\vspace{2cm}
+\centering
+\includegraphics[width=6.5cm]{./img/logo.png}\\ % Logo
+\vspace{0.5cm}
+
+{\LARGE \textbf{FACULTAD DE CIENCIAS E INGENIERÍA} \par}
+{\LARGE \textbf{CARRERA DE INGENIERÍA DE SOFTWARE} \par}
+\vspace{0.5cm}
+
+{\Large \textbf{TEMA:}}\\
+\Large Nombre del tema\\
+\vspace{0.5cm}
+{\Large \textbf{AUTORES:}}\\
+{\Large Autor1,}\\
+{\Large Autor2,}\\
+{\Large Autor3}\\
+\vspace{0.5cm}
+
+{\Large \textbf{ASIGNATURA:}}\\
+\Large Nombre de la asignatura\\
+\vspace{0.5cm}
+
+{\Large \textbf{DOCENTE:}}\\
+\Large Nombre del docente\\
+\vspace{0.5cm}
+
+{\Large \textbf{FECHA DE ENTREGA:}}\\
+\Large Fecha de entrega\\
+\vspace{0.5cm}
+
+{\Large \textbf{PERIODO:}}\\
+\Large Abril 2024 a Agosto 2025\\
+\vspace{1.5cm}
+
+{\Large \textbf{MILAGRO-ECUADOR}}
+
+% Franja inferior en el pie de página
+\vfill
+\noindent
+\makebox[\textwidth]{
+    \begin{minipage}[t]{0.4\paperwidth}
+        \colorbox{customBlue}{\parbox[c][0.5cm][c]{\linewidth}{\hspace{0pt}}}
+    \end{minipage}%
+    \begin{minipage}[t]{0.6\paperwidth}
+        \colorbox{customOrange}{\parbox[c][0.5cm][c]{\linewidth}{\hspace{0pt}}}
+    \end{minipage}
+}
+
+\restoregeometry
+
+\end{titlepage}
